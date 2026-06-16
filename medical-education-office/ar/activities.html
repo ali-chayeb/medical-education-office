@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="أنشطة مكتب التعليم الطبي - مشفى حلب الجامعي">
+  <title>الأنشطة - مكتب التعليم الطبي</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/ar/" class="logo-link">
+        <img data-setting="logo" src="/assets/images/placeholder-logo.png" alt="شعار المكتب" style="display:none;">
+        <span class="site-title" data-setting="site-title">مكتب التعليم الطبي</span>
+      </a>
+      <button class="mobile-toggle" aria-label="القائمة">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="/ar/">الرئيسية</a></li>
+          <li><a href="/ar/about.html">عن المكتب</a></li>
+          <li><a href="/ar/members.html">الأعضاء</a></li>
+          <li><a href="/ar/activities.html">الأنشطة</a></li>
+          <li><a href="/ar/contact.html">اتصل بنا</a></li>
+        </ul>
+        <div class="lang-switch">
+          <a href="/ar/" class="active">AR</a>
+          <a href="/en/">EN</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2>الأنشطة والفعاليات</h2>
+          <p>آخر البرامج التدريبية وورشات العمل</p>
+        </div>
+        <div id="activities-container" class="activities-list">
+          <div class="skeleton" style="height:200px;"></div>
+          <div class="skeleton" style="height:200px;"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="export-section">
+      <div class="container">
+        <div class="export-section">
+          <h3>تصدير البيانات</h3>
+          <p>تنزيل نسخة احتياطية من بيانات الموقع</p>
+          <div class="btn-group">
+            <button id="export-members" class="btn btn-primary">تنزيل الأعضاء (CSV)</button>
+            <button id="export-activities" class="btn btn-accent">تنزيل الأنشطة (CSV)</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-social">
+        <a data-setting="facebook" href="#" aria-label="Facebook">FB</a>
+        <a data-setting="whatsapp" href="#" aria-label="WhatsApp">WA</a>
+        <a data-setting="telegram" href="#" aria-label="Telegram">TG</a>
+        <a data-setting="email" href="#" aria-label="Email">@</a>
+      </div>
+      <p data-setting="site-title">مكتب التعليم الطبي</p>
+      <p data-setting="address"></p>
+    </div>
+  </footer>
+
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>

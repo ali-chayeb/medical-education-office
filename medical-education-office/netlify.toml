@@ -1,0 +1,8 @@
+[build]
+  command = "echo 'Static site - no build step'"
+  publish = "."
+
+[[redirects]]
+  from = "/admin"
+  to = "/admin/index.html"
+  status = 200

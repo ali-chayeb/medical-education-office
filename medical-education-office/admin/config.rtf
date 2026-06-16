@@ -1,0 +1,116 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2639
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset178 GeezaPro;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww13400\viewh16080\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 backend:\
+  name: github\
+  repo: YOUR_GITHUB_USERNAME/YOUR_REPO_NAME\
+  branch: main\
+  base_url: https://api.netlify.com\
+  auth_endpoint: auth\
+\
+media_folder: "assets/images/uploads"\
+public_folder: "/assets/images/uploads"\
+\
+collections:\
+  - name: "settings"\
+    label: "Site Settings"\
+    files:\
+      - file: "data/settings.json"\
+        name: "settings"\
+        label: "Site Settings"\
+        fields:\
+          - \{ label: "Site Title (Arabic)", name: "site_title_ar", widget: "string", default: "
+\f1 \'e3\'df\'ca\'c8
+\f0  
+\f1 \'c7\'e1\'ca\'da\'e1\'ed\'e3
+\f0  
+\f1 \'c7\'e1\'d8\'c8\'ed
+\f0 " \}\
+          - \{ label: "Site Title (English)", name: "site_title_en", widget: "string", default: "Medical Education Office" \}\
+          - \{ label: "Logo", name: "logo", widget: "image", required: false \}\
+          - \{ label: "Email", name: "email", widget: "string", required: false \}\
+          - \{ label: "Phone", name: "phone", widget: "string", required: false \}\
+          - \{ label: "WhatsApp Number (with country code, no +)", name: "whatsapp", widget: "string", required: false \}\
+          - \{ label: "Facebook URL", name: "facebook", widget: "string", required: false \}\
+          - \{ label: "Telegram URL", name: "telegram", widget: "string", required: false \}\
+          - \{ label: "Address (Arabic)", name: "address_ar", widget: "text", required: false \}\
+          - \{ label: "Address (English)", name: "address_en", widget: "text", required: false \}\
+          - \{ label: "Google Maps Embed URL", name: "map_url", widget: "string", required: false \}\
+\
+  - name: "members"\
+    label: "Members"\
+    folder: "data/members"\
+    create: true\
+    slug: "\{\{slug\}\}"\
+    fields:\
+      - \{ label: "Full Name (Arabic)", name: "name_ar", widget: "string" \}\
+      - \{ label: "Full Name (English)", name: "name_en", widget: "string" \}\
+      - \{ label: "Title (Arabic)", name: "title_ar", widget: "string" \}\
+      - \{ label: "Title (English)", name: "title_en", widget: "string" \}\
+      - \{ label: "Specialty (Arabic)", name: "specialty_ar", widget: "string", required: false \}\
+      - \{ label: "Specialty (English)", name: "specialty_en", widget: "string", required: false \}\
+      - \{ label: "Team (Arabic)", name: "team_ar", widget: "string", required: false \}\
+      - \{ label: "Team (English)", name: "team_en", widget: "string", required: false \}\
+      - \{ label: "Photo", name: "photo", widget: "image", required: false \}\
+      - \{ label: "Bio (Arabic)", name: "bio_ar", widget: "markdown", required: false \}\
+      - \{ label: "Bio (English)", name: "bio_en", widget: "markdown", required: false \}\
+      - \{ label: "Order", name: "order", widget: "number", default: 0, value_type: "int", required: false \}\
+\
+  - name: "activities"\
+    label: "Activities"\
+    folder: "data/activities"\
+    create: true\
+    slug: "\{\{year\}\}-\{\{month\}\}-\{\{day\}\}-\{\{slug\}\}"\
+    fields:\
+      - \{ label: "Title (Arabic)", name: "title_ar", widget: "string" \}\
+      - \{ label: "Title (English)", name: "title_en", widget: "string" \}\
+      - \{ label: "Date", name: "date", widget: "datetime", format: "YYYY-MM-DD", time_format: false \}\
+      - \{ label: "Featured Image", name: "image", widget: "image", required: false \}\
+      - \{ label: "Summary (Arabic)", name: "summary_ar", widget: "text", required: false \}\
+      - \{ label: "Summary (English)", name: "summary_en", widget: "text", required: false \}\
+      - \{ label: "Content (Arabic)", name: "body_ar", widget: "markdown" \}\
+      - \{ label: "Content (English)", name: "body_en", widget: "markdown" \}\
+\
+  - name: "pages"\
+    label: "Pages"\
+    files:\
+      - file: "data/pages/about_ar.md"\
+        name: "about_ar"\
+        label: "About Page (Arabic)"\
+        fields:\
+          - \{ label: "Title", name: "title", widget: "string", default: "
+\f1 \'da\'e4
+\f0  
+\f1 \'c7\'e1\'e3\'df\'ca\'c8
+\f0 " \}\
+          - \{ label: "Body", name: "body", widget: "markdown" \}\
+      - file: "data/pages/about_en.md"\
+        name: "about_en"\
+        label: "About Page (English)"\
+        fields:\
+          - \{ label: "Title", name: "title", widget: "string", default: "About the Office" \}\
+          - \{ label: "Body", name: "body", widget: "markdown" \}\
+      - file: "data/pages/contact_ar.md"\
+        name: "contact_ar"\
+        label: "Contact Page (Arabic)"\
+        fields:\
+          - \{ label: "Title", name: "title", widget: "string", default: "
+\f1 \'c7\'ca\'d5\'e1
+\f0  
+\f1 \'c8\'e4\'c7
+\f0 " \}\
+          - \{ label: "Body", name: "body", widget: "markdown" \}\
+      - file: "data/pages/contact_en.md"\
+        name: "contact_en"\
+        label: "Contact Page (English)"\
+        fields:\
+          - \{ label: "Title", name: "title", widget: "string", default: "Contact Us" \}\
+          - \{ label: "Body", name: "body", widget: "markdown" \}\
+\
+slug:\
+  encoding: "ascii"\
+  clean_accents: true}
